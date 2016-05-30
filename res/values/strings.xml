@@ -103,6 +103,8 @@
     <string name="confCall">Conference call</string>
     <!-- In-call screen: call lost dialog text -->
     <string name="call_lost">Call has been lost.</string>
+    <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
+    <string name="callUnanswered_forwarded">Call Unanswered and Forwarded</string>
     <!-- In-call screen: auto retry  -->
     <string name="retry">Retry</string>
     <!-- In-call screen: call lost title of dialog -->
@@ -284,7 +286,7 @@
     <!-- Call forwarding settings screen, setting summary text when forwarding all calls -->
     <string name="sum_cfu_enabled_indicator">Forwarding all calls</string>
     <!-- Call forwarding settings screen, setting summary text the Always forward is set -->
-    <string name="sum_cfu_enabled">Forwarding all calls to {0}</string>
+    <string name="sum_cfu_enabled">Forwarding all calls to <xliff:g id="phonenumber" example="555-1212">{0}</xliff:g></string>
     <!-- Call forwarding settings screen, Always forward is enabled but the number is unavailable -->
     <string name="sum_cfu_enabled_no_number">Number is unavailable</string>
     <!-- Call forwarding settings screen, setting summary text when Always forward is disabled -->
@@ -295,7 +297,7 @@
     <!-- Call forwarding dialog box, text field label -->
     <string name="messageCFB">Number when busy</string>
     <!-- Call forwarding settings screen, setting summary text when forwarding to specific number when busy -->
-    <string name="sum_cfb_enabled">Forwarding to {0}</string>
+    <string name="sum_cfb_enabled">Forwarding to <xliff:g id="phonenumber" example="555-1212">{0}</xliff:g></string>
     <!-- Call forwarding settings screen, setting summary text when forwarding when busy is disabled -->
     <string name="sum_cfb_disabled">Disabled</string>
     <!-- Error message displayed after failing to disable forwarding calls when the phone is busy -->
@@ -306,7 +308,7 @@
     <!-- Call forwarding dialog box, text field label -->
     <string name="messageCFNRy">Number when unanswered</string>
     <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unanswered -->
-    <string name="sum_cfnry_enabled">Forwarding to {0}</string>
+    <string name="sum_cfnry_enabled">Forwarding to <xliff:g id="phonenumber" example="555-1212">{0}</xliff:g></string>
     <!-- Call forwarding settings screen, setting summary text when Forward when unanswered is disabled -->
     <string name="sum_cfnry_disabled">Disabled</string>
     <!-- Error message displayed after failing to disable forwarding calls when the phone does not answer -->
@@ -317,7 +319,7 @@
     <!-- Call forwarding dialog box, text field label -->
     <string name="messageCFNRc">Number when unreachable</string>
     <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unreachable-->
-    <string name="sum_cfnrc_enabled">Forwarding to {0}</string>
+    <string name="sum_cfnrc_enabled">Forwarding to <xliff:g id="phonenumber" example="555-1212">{0}</xliff:g></string>
     <!-- Call forwarding settings screen, setting summary text when Forward when unreachable is disabled -->
     <string name="sum_cfnrc_disabled">Disabled</string>
     <!-- Error message displayed after failing to disable forwarding calls when the phone is unreachable -->
@@ -430,7 +432,7 @@
         <item>GSM only</item>
         <item>GSM / WCDMA preferred</item>
     </string-array>
-    <string-array name="preferred_network_mode_values">
+    <string-array name="preferred_network_mode_values" translatable="false">
         <item>"7"</item>
         <item>"6"</item>
         <item>"5"</item>
@@ -544,7 +546,7 @@
         <item>Chinese</item>
         <item>Hebrew</item>
     </string-array>
-    <string-array name="list_language_values">
+    <string-array name="list_language_values" translatable="false">
         <item>"1"</item>
         <item>"2"</item>
         <item>"3"</item>
@@ -604,8 +606,8 @@
     <string name="multi_category_disable">Multi-category disabled</string>
 
     <!-- GSM/UMTS Options strings -->
-    <string name="gsm_umts_network_preferences_title">GSM/UMTS Network Preferences</string>
-    <string name="gsm_umts_network_preferneces_summary">Not implemented yet! </string>
+    <string name="gsm_umts_network_preferences_title">Network Preferences</string>
+    <string name="gsm_umts_network_preferneces_summary">Change the network operating mode</string>
     <string name="gsm_umts_network_preferences_dialogtitle">GSM/UMTS network preferences</string>
     <string-array name="gsm_umts_network_preferences_choices">
         <item>GSM/WCDMA (auto mode)</item>
@@ -613,13 +615,12 @@
         <item>GSM only</item>
         <item>GSM/WCDA (WCDMA preferred)</item>
     </string-array>
-    <string-array name="gsm_umts_network_preferences_values">
-        <item>"0"</item>
-        <item>"1"</item>
-        <item>"2"</item>
+    <string-array name="gsm_umts_network_preferences_values" translatable="false">
         <item>"3"</item>
+        <item>"2"</item>
+        <item>"1"</item>
+        <item>"0"</item>
     </string-array>
-
     <!-- Mobile network settings screen, setting option name -->
     <string name="prefer_2g">Use only 2G networks</string>
     <!-- Mobile network settings screen, setting summary text -->
@@ -658,23 +659,23 @@
         <item>Affiliated Networks</item>
         <item>Any Network</item>
     </string-array>
-    <string-array name="cdma_roaming_mode_values">
+    <string-array name="cdma_roaming_mode_values" translatable="false">
         <item>"0"</item>
         <item>"1"</item>
         <item>"2"</item>
     </string-array>
-    <string name="cdma_network_preferences_title">CDMA Network Preferences</string>
-    <string name="cdma_network_preferneces_summary">Not implemented yet! </string>
+    <string name="cdma_network_preferences_title">Network Preferences</string>
+    <string name="cdma_network_preferneces_summary">Change the network operating mode</string>
     <string name="cdma_network_preferences_dialogtitle">CDMA network preferences</string>
     <string-array name="cdma_network_preferences_choices">
         <item>CDMA/EvDo</item>
         <item>CDMA only</item>
         <item>EvDo only</item>
     </string-array>
-    <string-array name="cdma_network_preferences_values">
-        <item>"0"</item>
-        <item>"1"</item>
-        <item>"2"</item>
+    <string-array name="cdma_network_preferences_values" translatable="false">
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
     </string-array>
     <string name="cdma_subscription_title">CDMA Subscription</string>
     <string name="cdma_subscription_summary">Change between RUIM/SIM and NV</string>
@@ -683,7 +684,7 @@
         <item>RUIM/SIM</item>
         <item>NV</item>
     </string-array>
-    <string-array name="cdma_subscription_values">
+    <string-array name="cdma_subscription_values" translatable="false">
         <item>"0"</item>
         <item>"1"</item>
     </string-array>
@@ -871,12 +872,15 @@
     <string name="card_title_dialing">Dialing</string>
     <!-- In-call screen: status label for a re-dialing call -->
     <string name="card_title_redialing">Retrying</string>
+
     <!-- In-call screen: status label for a call in progress -->
     <string name="card_title_in_progress">Current call</string>
     <!-- In-call screen: status label for a conference call -->
     <string name="card_title_conf_call">Conference call</string>
     <!-- In-call screen: status label for an incoming call -->
     <string name="card_title_incoming_call">Incoming call</string>
+    <!-- In-call screen: status label for a call that is held remotely  -->
+    <string name="card_title_waiting_call">Waiting call</string>
     <!-- In-call screen: status label for an cdma call waiting -->
     <string name="card_title_cdma_call_waiting">Cdma callwaiting </string>
     <!-- In-call screen: status label displayed briefly after a call ends -->
@@ -887,6 +891,41 @@
     <string name="card_title_hanging_up">Hanging up</string>
     <!-- In-call screen: status label for a call that's in CDMA flash mode -->
     <string name="card_title_in_call">In call</string>
+    <!-- In-call screen: special status label that shows your own phone
+         number during emergency callback mode (ECM) [CHAR LIMIT=30] -->
+    <string name="card_title_my_phone_number">My number is <xliff:g id="my_phone_number">%s</xliff:g></string>
+
+    <!-- Toasts for various transient network events -->
+    <!-- Toast text for Unconditional Call Forwarding enabled  -->
+    <string name="call_notif_unconditionalCF">Unconditional call forwarding active</string>
+    <!-- Toast text for Conditional Call Forwarding enabled  -->
+    <string name="call_notif_conditionalCF">Conditional call forwarding active</string>
+    <!-- Toast text for a forwarded MO call  -->
+    <string name="call_notif_MOcall_forwarding">Outgoing call is forwarded</string>
+    <!-- In-call screen: status label when Call waiting is enabled on remote party  -->
+    <string name="call_notif_calliswaiting">Remote party is busy, call is waiting</string>
+    <!-- Toast text for MO call, when the caller & callee both belng to a CUG group -->
+    <string name="call_notif_cugcall">Call in closed user group</string>
+    <!-- In-call screen: status label when MO calls are barred -->
+    <string name="call_notif_outgoing_barred">Outgoing calls barred</string>
+    <!-- Toast text for MO calls, when incoming calls are barred at remote party -->
+    <string name="call_notif_incoming_barred">Incoming calls barred at remote party</string>
+    <!-- Toast text for MO calls when CLIR Suppression is rejected -->
+    <string name="call_notif_clir_suppression_rejected">Own number suppression rejected by network</string>
+    <!-- In-call screen: status label when MO call gets deflected to another party -->
+    <string name="call_notif_call_deflected">Call forwarded by remote party</string>
+    <!-- Toast text for incoming call being forwarded to other remote party  -->
+    <string name="call_notif_MTcall_forwarding">Incoming call is forwarded</string>
+    <!-- Toast text for incoming call which is part of MultiParty Call -->
+    <string name="call_notif_multipartycall">Multi-party call</string>
+    <!-- Toast text for incoming call which is answered,put on hold & then released -->
+    <string name="call_notif_callonhold_released">Call released remotely</string>
+    <!-- Toast text for incoming call forward check received -->
+    <string name="call_notif_forwardcheckreceived">Call was forwarded</string>
+    <!-- Toast text for incoming call connecting through ECT -->
+    <string name="call_notif_callconnectingect">Call connecting through explicit call transfer</string>
+    <!-- Toast text for incoming call connected through ECT -->
+    <string name="call_notif_callconnectedect">Call connected through explicit call transfer</string>
 
     <!-- Notification strings -->
     <!-- Missed call notification label, used when there's exactly one missed call -->
@@ -954,6 +993,8 @@
 
     <!-- In-call screen: "call type" indication for a SIP call [CHAR LIMIT=30]  -->
     <string name="incall_call_type_label_sip">Internet call</string>
+    <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
+    <string name="incall_call_type_label_forwarded">Forwarded call</string>
 
     <!-- Dialog title for the "radio enable" UI for emergency calls -->
     <string name="emergency_enable_radio_dialog_title">Emergency call</string>
@@ -1242,6 +1283,8 @@
     <string name="black_list">Blacklist</string>
     <string name="black_list_sum">Incoming call in black list will be rejected.</string>
     <string name="add_black">Add phone number</string>
+    <string name="black_regex_title">Use wildcards</string>
+    <string name="black_regex_summary">Use . as a wildcard and * for repetition. Eg. 123.* blocks numbers starting with 123 and .*123.* blocks numbers containing 123</string>
     <string name="remove_black">Remove %s from List</string>
     <string name="turn_silence">Turn over silence</string>
     <string name="turn_silence_sum">Turn over to silence ring</string>
@@ -1249,6 +1292,10 @@
     <string name="left_hand_sum">Use left hand hold the phone, need a reboot to effect.</string>
     <string name="set_force_touch">In-call touch UI</string>
     <string name="set_force_touch_sum">Force in-call touch UI without proximity sensor</string>
+    <string name="rotate_incall">Enable sensor rotation</string>
+    <string name="rotate_incall_sum">Allow incall screen to rotate with orientation change.</string>
+    <string name="bg_incall">Incoming call in background</string>
+    <string name="bg_incall_sum">Keep incoming call UI in background when screen is on, show notification and play ringtone only.</string>
 
     <!-- Use this as a default to describe the contact photo; currently for screen readers through accessibility. -->
     <string name="contactPhoto">contact photo</string>
@@ -1405,6 +1452,14 @@
     <string name="send_keepalive_title">Send keep-alive</string>
     <!-- Text of the keepalive preference summary. [CHAR LIMIT=NONE] -->
     <string name="send_keepalive_summary">Send SIP keep-alive messages</string>
+    <!-- Item of the the keepalive option dialog: Automatic. [CHAR LIMIT=NONE] -->
+    <string name="sip_system_decide_entry">Automatic</string>
+    <!-- Item of the the keepalive option dialog: Always send. [CHAR LIMIT=NONE] -->
+    <string name="sip_always_send_keepalive_entry">Always send</string>
+    <!-- Text of the keepalive interval preference. [CHAR LIMIT=NONE] -->
+    <string name="keepalive_interval_title">Keep-alive interval</string>
+    <!-- Text of the keepalive interval preference summary. [CHAR LIMIT=NONE] -->
+    <string name="keepalive_interval_summary">SIP keep-alive interval in seconds</string>
     <!-- Text of the user agent preference. [CHAR LIMIT=NONE] -->
     <string name="user_agent_title">SIP User-Agent</string>
     <!-- Text of the auto registration preference. [CHAR LIMIT=NONE] -->
@@ -1434,6 +1489,8 @@
     <!-- Default sip server/proxy transport protocol. -->
     <string translatable="false" name="default_transport">UDP</string>
 
+    <!-- Default sip keep-alive interval in seconds -->
+    <string translatable="false" name="default_keepalive_interval">15</string>
 
     <!-- Hint to show the advanced settings section. [CHAR LIMIT=NONE] -->
     <string name="advanced_settings_show">▷ Touch to show all</string>
@@ -1475,6 +1532,7 @@
     <string translatable="false" name="port">Port</string>
     <string translatable="false" name="transport">Protocol</string>
     <string translatable="false" name="send_keepalive">SendKeepAlive</string>
+    <string translatable="false" name="keepalive_interval">KeepAliveInterval</string>
     <string translatable="false" name="auto_registration">AutoRegistration</string>
     <string translatable="false" name="set_primary">SetPrimary</string>
     <string translatable="false" name="advanced_settings_container">advanced settings container</string>
@@ -1485,6 +1543,9 @@
     <string name="per_change_mobile_network_desc">Application with this permission can, at any time, change between 2G Data and 3G data. 3G is faster, consumes more batery, and can also cost you more money.</string>
     <string name="phone_number_label">My phone number</string>
     <string name="phone_number_summary">Set the phone number for this device</string>
+
+    <string name="show_ssn_label">Event notification</string>
+    <string name="show_ssn_summary">Show a notification for various network events related to call handling</string>
 
     <!-- TrackBall Answer - Added by Nushio -->
     <string name="trackball_answer">Trackball Answer</string>  
@@ -1508,6 +1569,10 @@
        <item>Double Tap to Hang up</item>    
     </string-array> 
 
+    <!-- Hide Hold button - Added by leinardi -->
+    <string name="hide_hold_button">Hide Hold button</string>  
+    <string name="hide_hold_button_sum">Hide the button that puts the current call on hold.</string>
+
     <!-- Phone goggles -->
     <string name="toast_phone_goggles">You are not allowed to make phone calls at this time. Please try again later.</string>
     <string name="dialog_phone_goggles_title">Call blocked</string>
@@ -1516,4 +1581,14 @@
     <string name="dialog_phone_goggles_unauthorized">Making a phone call may not be wise at this time.</string>
     <string name="dialog_phone_goggles_ok">Call</string>
     <string name="dialog_phone_goggles_cancel">Cancel</string>
+
+    <!-- Voice quality filter -->
+    <string name="voice_quality_preferences_title">Voice quality</string>
+    <string name="voice_quality_summary">Set a voice profile to enhance your listening experience</string>
+    <!-- Do not remove those, they're used from overlays -->
+    <string name="voice_quality_entry_normal">Normal</string>
+    <string name="voice_quality_entry_clear">Clear</string>
+    <string name="voice_quality_entry_crisp">Crisp</string>
+    <string name="voice_quality_entry_bright">Bright</string>
+
 </resources>

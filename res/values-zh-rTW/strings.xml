@@ -122,7 +122,7 @@
     <!-- In-call menu item labels -->
     <!-- Regular in-call menu items: -->
     <!-- In-call menu: Label for "speakerphone" menu item -->
-    <string name="menu_speaker" msgid="6069700688651964705">"喇叭"</string>
+    <string name="menu_speaker" msgid="6069700688651964705">"擴音"</string>
     <!-- In-call menu: Label for "bluetooth" menu item -->
     <string name="menu_bluetooth" msgid="8842523654717305695">"藍牙"</string>
     <!-- In-call menu: Label for "mute" menu item -->
@@ -285,7 +285,7 @@
     <!-- Call forwarding settings screen, setting summary text when forwarding all calls -->
     <string name="sum_cfu_enabled_indicator" msgid="4014187342724130197">"轉接所有來電"</string>
     <!-- Call forwarding settings screen, setting summary text the Always forward is set -->
-    <string name="sum_cfu_enabled" msgid="956178654350554451">"轉接所有來電到 {0}"</string>
+    <string name="sum_cfu_enabled" msgid="2450052502198827927">"將所有來電轉接至 <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
     <!-- Call forwarding settings screen, Always forward is enabled but the number is unavailable -->
     <string name="sum_cfu_enabled_no_number" msgid="6591985777096823616">"號碼無法使用"</string>
     <!-- Call forwarding settings screen, setting summary text when Always forward is disabled -->
@@ -296,7 +296,7 @@
     <!-- Call forwarding dialog box, text field label -->
     <string name="messageCFB" msgid="3711089705936187129">"忙線時轉接號碼"</string>
     <!-- Call forwarding settings screen, setting summary text when forwarding to specific number when busy -->
-    <string name="sum_cfb_enabled" msgid="2501948432392255856">"轉接到 {0}"</string>
+    <string name="sum_cfb_enabled" msgid="5984198104833116690">"轉接至 <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
     <!-- Call forwarding settings screen, setting summary text when forwarding when busy is disabled -->
     <string name="sum_cfb_disabled" msgid="227440009979537651">"停用"</string>
     <!-- Error message displayed after failing to disable forwarding calls when the phone is busy -->
@@ -307,7 +307,7 @@
     <!-- Call forwarding dialog box, text field label -->
     <string name="messageCFNRy" msgid="672317899884380374">"未接聽時的轉接號碼"</string>
     <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unanswered -->
-    <string name="sum_cfnry_enabled" msgid="3473526018876802076">"轉接到 {0}"</string>
+    <string name="sum_cfnry_enabled" msgid="6955775691317662910">"轉接至 <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
     <!-- Call forwarding settings screen, setting summary text when Forward when unanswered is disabled -->
     <string name="sum_cfnry_disabled" msgid="8422350929957344729">"停用"</string>
     <!-- Error message displayed after failing to disable forwarding calls when the phone does not answer -->
@@ -318,7 +318,7 @@
     <!-- Call forwarding dialog box, text field label -->
     <string name="messageCFNRc" msgid="6380695421020295119">"無法接通時的轉接號碼"</string>
     <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unreachable-->
-    <string name="sum_cfnrc_enabled" msgid="3528648673654636587">"轉接到 {0}"</string>
+    <string name="sum_cfnrc_enabled" msgid="7010898346095497421">"轉接至 <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
     <!-- Call forwarding settings screen, setting summary text when Forward when unreachable is disabled -->
     <string name="sum_cfnrc_disabled" msgid="7222141261321276464">"停用"</string>
     <!-- Error message displayed after failing to disable forwarding calls when the phone is unreachable -->
@@ -424,16 +424,7 @@
         <item msgid="5714714953966979187">"僅限 GSM"</item>
         <item msgid="4775796025725908913">"GSM/WCDMA 優先"</item>
     </string-array>
-    <string-array name="preferred_network_mode_values">
-        <item msgid="7164534877603905916">"7"</item>
-        <item msgid="2520921432080278213">"6"</item>
-        <item msgid="4978887990900575049">"5"</item>
-        <item msgid="6891436459357445885">"4"</item>
-        <item msgid="339825043192186272">"3"</item>
-        <item msgid="3062641619893382241">"2"</item>
-        <item msgid="2494009747968041784">"1"</item>
-        <item msgid="2568449734331711605">"0"</item>
-    </string-array>
+    <!-- skipping untranslatable /resources:0/string-array:name=preferred_network_mode_values -->
     <!-- Mobile network settings screen, data enabling checkbox name -->
     <string name="data_enabled" msgid="5972538663568715366">"已啟用資料"</string>
     <!-- Mobile network settings screen, setting summary text when check box is not selected (explains what selecting it would do) -->
@@ -538,15 +529,7 @@
         <item msgid="1933212028684529632">"中文"</item>
         <item msgid="1908428006803639064">"希伯來文"</item>
     </string-array>
-    <string-array name="list_language_values">
-        <item msgid="1804908636436467150">"1"</item>
-        <item msgid="289708030346890334">"2"</item>
-        <item msgid="1121469729692402684">"3"</item>
-        <item msgid="2614093115912897722">"4"</item>
-        <item msgid="2411164639857960614">"5"</item>
-        <item msgid="5884448729274543324">"6"</item>
-        <item msgid="5511864807618312598">"7"</item>
-    </string-array>
+    <!-- skipping untranslatable /resources:0/string-array:name=list_language_values -->
     <string name="list_language_dtitle" msgid="5442908726538951934">"語言"</string>
 
     <string name="enable_disable_local_weather" msgid="986967454867219114">"當地天氣預報"</string>
@@ -599,7 +582,7 @@
 
     <!-- GSM/UMTS Options strings -->
     <string name="gsm_umts_network_preferences_title" msgid="4834419333547382436">"GSM/UMTS 網路偏好設定"</string>
-    <string name="gsm_umts_network_preferneces_summary" msgid="1905018644156819521">"尚未建置！"</string>
+    <string name="gsm_umts_network_preferneces_summary">選用偏好的網路模式</string>
     <string name="gsm_umts_network_preferences_dialogtitle" msgid="6356332580813229898">"GSM/UMTS 網路偏好設定"</string>
     <string-array name="gsm_umts_network_preferences_choices">
         <item msgid="935612021902787683">"GSM/WCDMA (自動模式)"</item>
@@ -607,13 +590,7 @@
         <item msgid="8776934131146642662">"僅限 GSM"</item>
         <item msgid="4684679567848300935">"GSM/WCDA (WCDMA 優先)"</item>
     </string-array>
-    <string-array name="gsm_umts_network_preferences_values">
-        <item msgid="117293148930527265">"0"</item>
-        <item msgid="2264578612775462302">"1"</item>
-        <item msgid="1268081943590316978">"2"</item>
-        <item msgid="4469871047641902607">"3"</item>
-    </string-array>
-
+    <!-- skipping untranslatable /resources:0/string-array:name=gsm_umts_network_preferences_values -->
     <!-- Mobile network settings screen, setting option name -->
     <string name="prefer_2g" msgid="8442550937280449639">"只使用 2G 網路"</string>
     <!-- Mobile network settings screen, setting summary text -->
@@ -645,24 +622,16 @@
         <item msgid="8174642753290624634">"聯盟網路"</item>
         <item msgid="2241951431403168661">"任何網路"</item>
     </string-array>
-    <string-array name="cdma_roaming_mode_values">
-        <item msgid="2549203161367380954">"0"</item>
-        <item msgid="6007798728227141997">"1"</item>
-        <item msgid="4039511109802141047">"2"</item>
-    </string-array>
+    <!-- skipping untranslatable /resources:0/string-array:name=cdma_roaming_mode_values -->
     <string name="cdma_network_preferences_title" msgid="41193174429510391">"CDMA 網路偏好設定"</string>
-    <string name="cdma_network_preferneces_summary" msgid="3524451924935793338">"尚未建置！"</string>
+    <string name="cdma_network_preferneces_summary">選用偏好的網路模式</string>
     <string name="cdma_network_preferences_dialogtitle" msgid="4548860809290455653">"CDMA 網路偏好設定"</string>
     <string-array name="cdma_network_preferences_choices">
         <item msgid="3711054371631487248">"CDMA/EvDo"</item>
         <item msgid="6143696847467859795">"僅限 CDMA"</item>
         <item msgid="2683555124647197574">"僅限 EvDo"</item>
     </string-array>
-    <string-array name="cdma_network_preferences_values">
-        <item msgid="5584048199290030331">"0"</item>
-        <item msgid="5741268642513143762">"1"</item>
-        <item msgid="419525200910932450">"2"</item>
-    </string-array>
+    <!-- skipping untranslatable /resources:0/string-array:name=cdma_network_preferences_values -->
     <string name="cdma_subscription_title" msgid="445607520753045412">"CDMA 訂閱"</string>
     <string name="cdma_subscription_summary" msgid="2530890766115781140">"在 RUIM/SIM 和 NV 之間切換"</string>
     <string name="cdma_subscription_dialogtitle" msgid="2699527950523333110">"訂閱"</string>
@@ -670,10 +639,7 @@
         <item msgid="2258014151300708431">"RUIM/SIM"</item>
         <item msgid="5127722015571873880">"NV"</item>
     </string-array>
-    <string-array name="cdma_subscription_values">
-        <item msgid="7494167883478914080">"0"</item>
-        <item msgid="6043847456049107742">"1"</item>
-    </string-array>
+    <!-- skipping untranslatable /resources:0/string-array:name=cdma_subscription_values -->
 
     <!-- FDN settings strings -->
     <!-- Call settings screen, setting option name -->
@@ -874,6 +840,9 @@
     <string name="card_title_hanging_up" msgid="3999101620995182450">"掛斷電話"</string>
     <!-- In-call screen: status label for a call that's in CDMA flash mode -->
     <string name="card_title_in_call" msgid="6346543933068225205">"通話中"</string>
+    <!-- In-call screen: special status label that shows your own phone
+         number during emergency callback mode (ECM) [CHAR LIMIT=30] -->
+    <string name="card_title_my_phone_number" msgid="112428362494434191">"我的電話號碼：<xliff:g id="MY_PHONE_NUMBER">%s</xliff:g>"</string>
 
     <!-- Notification strings -->
     <!-- Missed call notification label, used when there's exactly one missed call -->
@@ -989,7 +958,7 @@
     <!-- Text for the onscreen "Hide Dialpad" button -->
     <string name="onscreenHideDialpadText" msgid="2572388822571686252">"隱藏"</string>
     <!-- Text for the onscreen "Speaker" button -->
-    <string name="onscreenSpeakerText" msgid="9013795366801657948">"喇叭"</string>
+    <string name="onscreenSpeakerText" msgid="9013795366801657948">"擴音"</string>
     <!-- Text for the onscreen "Mute" button -->
     <string name="onscreenMuteText" msgid="5011369181754261374">"靜音"</string>
     <!-- Text for the onscreen "Bluetooth" button -->
@@ -1077,7 +1046,7 @@
     <!-- Button label within the OTA listen screen -->
     <string name="ota_dialpad" msgid="3530900997110658409">"小鍵盤"</string>
     <!-- Button label within the OTA listen screen -->
-    <string name="ota_speaker" msgid="6904589278542719647">"喇叭"</string>
+    <string name="ota_speaker" msgid="6904589278542719647">"擴音"</string>
     <!-- String to be displayed on OTA listen screen once user has selected the
          correct option to begin provisioning -->
     <string name="ota_progress" msgid="4644512049143969504">"手機正在進行程式化設定，請稍候。"</string>
@@ -1213,6 +1182,8 @@
     <string name="black_list">黑名單</string>
     <string name="black_list_sum">列入黑名單的來電會被自動掛斷</string>
     <string name="add_black">新增來電號碼</string>
+    <string name="black_regex_title">使用萬用字元</string>
+    <string name="black_regex_summary">使用 . 作為萬用字元，以 * 代表重複。例：123.* 會攔截開首為 123 的號碼，而 .*123.* 會攔截包含 123 的號碼</string>
     <string name="remove_black">從名單中刪除 %s</string>
     <string name="turn_silence">翻轉靜音</string>
     <string name="turn_silence_sum">來電時把手機翻轉來將鈴聲靜音</string>
@@ -1220,6 +1191,10 @@
     <string name="left_hand_sum">用左手拿手機操作和接聽電話。需要重新啟動。</string>
     <string name="set_force_touch">通話中顯示鍵盤</string>
     <string name="set_force_touch_sum">忽略距離感應，強制在通話中顯示撥號鍵盤。</string>
+    <string name="rotate_incall">啟用旋轉感應</string>
+    <string name="rotate_incall_sum">允許來電螢幕隨著方向變動而旋轉</string>
+    <string name="bg_incall">背境來電</string>
+    <string name="bg_incall_sum">當螢幕已開啟、來電時不顯示通話介面，只顯示通知及播放鈴聲</string>
 
     <!-- Use this as a default to describe the contact photo; currently for screen readers through accessibility. -->
     <string name="contactPhoto" msgid="4713193418046639466">"聯絡人相片"</string>
@@ -1376,6 +1351,14 @@
     <string name="send_keepalive_title" msgid="7533342573918645113">"傳送 keep-alive"</string>
     <!-- Text of the keepalive preference summary. [CHAR LIMIT=NONE] -->
     <string name="send_keepalive_summary" msgid="9038969409950960640">"傳送 SIP keep-alive 訊息"</string>
+    <!-- Item of the the keepalive option dialog: Automatic. [CHAR LIMIT=NONE] -->
+    <string name="sip_system_decide_entry">自動</string>
+    <!-- Item of the the keepalive option dialog: Always send. [CHAR LIMIT=NONE] -->
+    <string name="sip_always_send_keepalive_entry">總是傳送</string>
+    <!-- Text of the keepalive interval preference. [CHAR LIMIT=NONE] -->
+    <string name="keepalive_interval_title">Keep-alive 區間</string>
+    <!-- Text of the keepalive interval preference summary. [CHAR LIMIT=NONE] -->
+    <string name="keepalive_interval_summary">設定每隔多少秒傳送一次 SIP keep-alive 訊息</string>
     <!-- Text of the user agent preference. [CHAR LIMIT=NONE] -->
     <string name="user_agent_title">SIP 使用者代理程式</string>
     <!-- Text of the auto registration preference. [CHAR LIMIT=NONE] -->
@@ -1405,6 +1388,8 @@
     <!-- Default sip server/proxy transport protocol. -->
     <!-- skipping untranslatable /resources:0/string:name=default_transport -->
 
+    <!-- Default sip keep-alive interval in seconds -->
+    <!-- skipping untranslatable /resources:0/string:name=default_keepalive_interval -->
 
     <!-- Hint to show the advanced settings section. [CHAR LIMIT=NONE] -->
     <string name="advanced_settings_show" msgid="4668880308290857597">"▷ 輕觸即可全部顯示"</string>
@@ -1446,6 +1431,7 @@
     <!-- skipping untranslatable /resources:0/string:name=port -->
     <!-- skipping untranslatable /resources:0/string:name=transport -->
     <!-- skipping untranslatable /resources:0/string:name=send_keepalive -->
+    <!-- skipping untranslatable /resources:0/string:name=keepalive_interval -->
     <!-- skipping untranslatable /resources:0/string:name=auto_registration -->
     <!-- skipping untranslatable /resources:0/string:name=set_primary -->
     <!-- skipping untranslatable /resources:0/string:name=advanced_settings_container -->
@@ -1475,6 +1461,10 @@
        <item>按兩下掛斷</item>
     </string-array>
 
+    <!-- Hide Hold button - Added by leinardi -->
+    <string name="hide_hold_button">隱藏保留按鈕</string>
+    <string name="hide_hold_button_sum">在通話中不顯示將目前通話保留的按鈕</string>
+
     <!-- Phone goggles -->
     <string name="toast_phone_goggles">現在不容許您撥出通話，請稍後再試一次。</string>
     <string name="dialog_phone_goggles_title">通話已被封鎖</string>
@@ -1483,4 +1473,14 @@
     <string name="dialog_phone_goggles_unauthorized">此刻撥出通話似非明智之舉。</string>
     <string name="dialog_phone_goggles_ok">撥打</string>
     <string name="dialog_phone_goggles_cancel">取消</string>
+
+    <!-- Voice quality filter -->
+    <string name="voice_quality_preferences_title">語音品質</string>
+    <string name="voice_quality_summary">使用語音設定檔來提升您的聽覺感受</string>
+    <!-- Do not remove those, they're used from overlays -->
+    <string name="voice_quality_entry_normal">正常</string>
+    <string name="voice_quality_entry_clear">清晰</string>
+    <string name="voice_quality_entry_crisp">清脆</string>
+    <string name="voice_quality_entry_bright">明亮</string>
+
 </resources>

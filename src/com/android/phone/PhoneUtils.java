@@ -2138,6 +2138,11 @@ public class PhoneUtils {
     /* package */ static boolean okToAddCall(CallManager cm) {
         Phone phone = cm.getActiveFgCall().getPhone();
 
+        // "Add call" is never allowed in emergency callback mode (ECM).
+        if (isPhoneInEcm(phone)) {
+            return false;
+        }
+
         int phoneType = phone.getPhoneType();
         final Call.State fgCallState = cm.getActiveFgCall().getState();
         if (phoneType == Phone.PHONE_TYPE_CDMA) {
@@ -2431,6 +2436,15 @@ public class PhoneUtils {
             if (phone != null) return phone;
         }
         return cm.getDefaultPhone();
+    }
+
+    public static Phone getGsmPhone(CallManager cm) {
+        for (Phone phone: cm.getAllPhones()) {
+            if (phone.getPhoneType() == Phone.PHONE_TYPE_GSM) {
+                return phone;
+            }
+        }
+        return null;
     }
 
     public static Phone getSipPhoneFromUri(CallManager cm, String target) {
